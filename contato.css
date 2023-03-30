@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+}
+
+li:hover {
+    color: #ff0000;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    width: 500px;
+}
+
+section h2 {
+    color:aliceblue;
+    font-size: 2.5rem;
+    margin-left: 150%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150%;
+    width: 100%;
+}
+
+form label {
+    color: aliceblue;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 15px;
+    outline: nome;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+    background-color: aliceblue;
+}
+
+#textarea {
+    background-color: aliceblue;
+}
+
+#kk {
+    color: aliceblue;
+}
+
+#tt {
+    color: black;
+    border-color: aliceblue;
+    background-color: aliceblue;
+    transition: .8s;
+}
+
+#tt:hover {
+    background-color: #0033ff;
+    color: #fff;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro' sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section h2 {
+        width: 140%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 115%;
+    }
+}

@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color:aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro' sans-serif;
+}
+
+li:hover {
+    color: #ff0000;
+
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.personagens-do-jogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro' sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.banner-1 {
+    background-image: url('https://i.pinimg.com/564x/16/d9/eb/16d9ebdf879b928d23f21643b312f3c7.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://i.pinimg.com/564x/a3/48/8b/a3488b2c564334945e31bc1f39d4a0cf.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://i.pinimg.com/564x/9d/de/3c/9dde3cc2248ba7a1da578d22c0bb2543.jpg');
+}
+
+.banner-4 {
+    background-image: url('https://i.pinimg.com/564x/24/f1/4a/24f14ae07d8cf20817f9d3dfe305e926.jpg');
+}
+
+.banner-5 {
+    background-image: url('https://i.pinimg.com/564x/b3/62/5c/b3625c8a3093bf390c3c366677af5e6b.jpg');
+}
+
+.banner-6 {
+    background-image: url('https://i.pinimg.com/564x/01/9b/2e/019b2e67478d8386f9575c410dd8c64b.jpg');
+}
+
+.banner-7 {
+    background-image: url('https://i.pinimg.com/564x/84/18/53/84185390d256801ee850349bbcf68986.jpg');
+}
+
+.banner-8 {
+    background-image: url('https://i.pinimg.com/564x/02/63/c7/0263c7b1984084346600144672fa7bd7.jpg');
+}
+
+.banner-9 {
+    background-image: url('https://static.wikia.nocookie.net/thelastofus/images/b/b7/Screenshot_2020-06-29_Manny_Alvarez.png/revision/latest?cb=20200721215744&path-prefix=fr');
+}
+
+.banner-10 {
+    background-image: url('https://i.pinimg.com/564x/63/06/18/630618158d9f4546afc5f5fa98a32221.jpg');
+}
+
+.banner-11 {
+    background-image: url('https://i.pinimg.com/564x/21/5e/2a/215e2a8c2c2c74debfc05905235d6998.jpg');
+}
+
+.banner-12 {
+    background-image: url('https://i.pinimg.com/564x/36/99/5d/36995d90e1713b5eb8c9217b17199cff.jpg');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro' sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
